@@ -4,7 +4,6 @@ Encapsulation is the process of binding data (variables) and code (methods) toge
 **Analogy**: Think of a car. You can drive it using the pedals and steering wheel without needing to understand how the engine works. The engine is encapsulated.
 
 ## **Core Concepts**
-
 * **Data Hiding**: Internal object details hidden from the outside world.
 * **Controlled Access**: Through public methods (getters/setters).
 * **Encapsulation Layer**: Ensures only valid operations are allowed.
@@ -12,11 +11,9 @@ Encapsulation is the process of binding data (variables) and code (methods) toge
 > Encapsulation protects data from accidental modification and enhances code organization.
 
 ## **Access Modifiers**
-
 Access modifiers are used across most programming languages to control **visibility and accessibility** of class members (fields, methods, constructors, etc.). While the **concept is common**, the **syntax and enforcement differ** between languages.
 
 ### ✅ Java Access Modifiers
-
 Java uses **explicit keywords** to define access levels:
 
 | Modifier  | Class | Package | Subclass | World |
@@ -57,12 +54,10 @@ class Rectangle:
 </details>
 
 🔍 **Key Differences**:
-
 * Java enforces access through compiler rules.
 * Python relies on developer discipline and naming conventions.
 
 ## **Getters and Setters** 
-
 Getters and setters are used to **encapsulate** private fields and **control access** to them. This ensures **validation**, **read-only/write-only control**, and **data protection**.
 
 ### ✅ Why Use Getters and Setters?
@@ -91,7 +86,6 @@ public class Person {
     }
 }
 ```
-
 </details>
 
 <details>
@@ -111,33 +105,26 @@ class Person:
         if name:
             self.__name = name
 ```
-
 </details>
 
 🔍 **Key Notes**:
-
 * In **Java**, getters/setters are common OOP practice with `private` fields.
 * In **Python**, although not enforced, we use `__name` for private fields and expose them via 
 
-
-## ** Benefits of Encapsulation**
-
+## **Benefits of Encapsulation**
 Encapsulation bundles data (fields) and methods (functions) that operate on the data into a single unit—usually a class. This not only protects internal states but also provides clear interfaces for interaction.
 
 ### ✅ Key Benefits:
-
 * **Data Integrity**: Prevents unintended or invalid changes by restricting direct access.
 * **Controlled Modification**: Changes to data go through controlled interfaces (getters/setters) that can include validation logic.
 * **Maintainability**: Encapsulated code is easier to maintain, debug, and update since internal details are hidden.
 * **Abstraction & Modularity**: Users interact with high-level interfaces without needing to understand the internal workings.
 * **Security**: Sensitive data is hidden from external interference, reducing the risk of bugs or malicious access.
 
-## ** Encapsulation vs Other Concepts**
-
+## **Encapsulation vs Other Concepts**
 Encapsulation is often confused with other OOP principles like abstraction. While they are related, they serve different purposes.
 
 ### **Encapsulation vs Abstraction**
-
 | Feature            | **Encapsulation**                         | **Abstraction**                                       |
 | ------------------ | ----------------------------------------- | ----------------------------------------------------- |
 | **Focus**          | Hiding internal **data**                  | Hiding **implementation complexity**                  |
@@ -197,12 +184,10 @@ class Animal(ABC):
 </details>
 
 ### **Encapsulation vs Containerization**
-
 * **Encapsulation**: Programming concept (OOP)
 * **Containerization**: Software deployment strategy
 
 ### **Bank Account Example**
-
 <details>
 <summary>Python Code</summary>
 
@@ -254,7 +239,6 @@ public class BankAccount {
 </details>
 
 ### **Student Class with Grade Validation**
-
 <details>
 <summary>Python</summary>
 
@@ -299,7 +283,6 @@ public class Student {
 </details>
 
 ### **Employee Class with Salary Encapsulation**
-
 In this example, we encapsulate the **salary** field using a setter method with validation to prevent incorrect values.
 
 <details>
@@ -361,7 +344,6 @@ public class Employee {
 </details>
 
 ### **Car Class with Speed Control**
-
 Here’s an example of encapsulation where we hide the **speed** field and provide controlled access to modify it through **getter/setter methods**.
 
 <details>
@@ -421,7 +403,6 @@ public class Car {
 </details>
 
 ### **Product Class with Price Validation**
-
 This example shows how encapsulation is useful in real-world situations, like maintaining valid price data for a product.
 
 <details>
